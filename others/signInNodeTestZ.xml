@@ -1,0 +1,735 @@
+<TrustFrameworkPolicy xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PolicySchemaVersion="0.3.0.0" TenantId="gptestb2corg.onmicrosoft.com" PolicyId="B2C_1A_TrustFrameworkExtensions" PublicPolicyUri="http://gptestb2corg.onmicrosoft.com/B2C_1A_TrustFrameworkExtensions">
+    <BasePolicy>
+        <TenantId>gptestb2corg.onmicrosoft.com</TenantId>
+        <PolicyId>B2C_1A_TrustFrameworkLocalization</PolicyId>
+    </BasePolicy>
+    <BuildingBlocks>
+        <ClaimsSchema>
+            <ClaimType Id="socialIdpUserId">
+                <DisplayName>Username</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="objectId">
+                <DisplayName>User's Object ID</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="password">
+                <DisplayName>Password</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Password</UserInputType>
+            </ClaimType>
+            <ClaimType Id="testValueA">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="testValueB">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="testValueC">
+                <DisplayName>Test Value C</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="displayText">
+                <DisplayName>Message</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="userEmail">
+                <DisplayName>Email</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_branch_var_0">
+                <DisplayName>Branch Variable 0</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_branch_var_1">
+                <DisplayName>Branch Variable 1</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_bcopy_dummy">
+                <DisplayName>jexg_bcopy_dummy</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="grant_type">
+                <DisplayName>grant_type</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="scope">
+                <DisplayName>scope</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="nca">
+                <DisplayName>nca</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="client_id">
+                <DisplayName>client_id</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="resource_id">
+                <DisplayName>resource_id</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_16">
+                <DisplayName>Conditional Evaluation Temp Condition 16</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_17">
+                <DisplayName>Conditional Evaluation Temp Condition 17</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_18">
+                <DisplayName>Conditional Evaluation Temp Condition 18</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_grp_19">
+                <DisplayName>Conditional Evaluation Temp Group 19</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_gacc_20">
+                <DisplayName>Conditional Evaluation Temp GroupAcc 20</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_21">
+                <DisplayName>Conditional Evaluation Temp Condition 21</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_22">
+                <DisplayName>Conditional Evaluation Temp Condition 22</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_23">
+                <DisplayName>Conditional Evaluation Temp Condition 23</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_grp_24">
+                <DisplayName>Conditional Evaluation Temp Group 24</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_gacc_25">
+                <DisplayName>Conditional Evaluation Temp GroupAcc 25</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_26">
+                <DisplayName>Conditional Evaluation Temp Condition 26</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_27">
+                <DisplayName>Conditional Evaluation Temp Condition 27</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_cnd_28">
+                <DisplayName>Conditional Evaluation Temp Condition 28</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_grp_29">
+                <DisplayName>Conditional Evaluation Temp Group 29</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_gacc_30">
+                <DisplayName>Conditional Evaluation Temp GroupAcc 30</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_fin_31">
+                <DisplayName>Conditional Evaluation Temp Final 31</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_cond_tmpclm_facc_32">
+                <DisplayName>Conditional Evaluation Temp FinalAcc 32</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueA">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueB">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueC">
+                <DisplayName>Test Value C</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueA_0">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueB_0">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueC_0">
+                <DisplayName>Test Value C</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+        </ClaimsSchema>
+        <ClaimsTransformations>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_17" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="A" />
+                    <InputParameter Id="operator" DataType="string" Value="equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_16" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_18" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="B" />
+                    <InputParameter Id="operator" DataType="string" Value="equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_17" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_19" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueC" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="C" />
+                    <InputParameter Id="operator" DataType="string" Value="not equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_18" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_gacc_3" TransformationMethod="AndClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_16" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_17" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_gacc_20" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_gacc_4" TransformationMethod="AndClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_gacc_20" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_18" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_grp_19" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_22" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="A" />
+                    <InputParameter Id="operator" DataType="string" Value="equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_21" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_23" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="B" />
+                    <InputParameter Id="operator" DataType="string" Value="not equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_22" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_24" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="C" />
+                    <InputParameter Id="operator" DataType="string" Value="equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_23" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_gacc_8" TransformationMethod="AndClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_21" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_22" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_gacc_25" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_gacc_9" TransformationMethod="AndClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_gacc_25" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_23" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_grp_24" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_27" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="A" />
+                    <InputParameter Id="operator" DataType="string" Value="not equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_26" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_28" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="B" />
+                    <InputParameter Id="operator" DataType="string" Value="equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_27" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_cnd_29" TransformationMethod="CompareClaimToValue">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueC" TransformationClaimType="inputClaim1" />
+                </InputClaims>
+                <InputParameters>
+                    <InputParameter Id="compareTo" DataType="string" Value="C" />
+                    <InputParameter Id="operator" DataType="string" Value="equal" />
+                    <InputParameter Id="ignoreCase" DataType="string" Value="false" />
+                </InputParameters>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_28" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_gacc_13" TransformationMethod="AndClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_26" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_27" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_gacc_30" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_gacc_14" TransformationMethod="AndClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_gacc_30" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_cnd_28" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_grp_29" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_facc_15" TransformationMethod="OrClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_grp_19" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_grp_24" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_facc_32" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_facc_16" TransformationMethod="OrClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_facc_32" TransformationClaimType="inputClaim1" />
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_grp_29" TransformationClaimType="inputClaim2" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_fin_31" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_17" TransformationMethod="NotClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_cond_tmpclm_fin_31" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_branch_var_1" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_cond_cxf_18" TransformationMethod="NotClaims">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="jexg_branch_var_1" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_branch_var_0" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueA_jexg_ui_di" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueB_jexg_ui_di" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueC_jexg_ui_di" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueC" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueC" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueA_jexg_ui_di_0" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_0" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueB_jexg_ui_di_0" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_0" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueC_jexg_ui_di_0" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueC" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueC_0" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+        </ClaimsTransformations>
+    </BuildingBlocks>
+    <ClaimsProviders>
+        <ClaimsProvider>
+            <DisplayName>Conditional Handling</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_brv_init_tp">
+                    <DisplayName>Branch Variable Initialization</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.ClaimsTransformationProtocolProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="jexg_branch_var_0" DefaultValue="false" AlwaysUseDefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="jexg_branch_var_1" DefaultValue="false" AlwaysUseDefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="jexg_bcopy_dummy" DefaultValue="true" AlwaysUseDefaultValue="true" />
+                    </OutputClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_cond_tp_4">
+                    <DisplayName>Conditional Branch 4</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.ClaimsTransformationProtocolProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="jexg_branch_var_0" DefaultValue="false" />
+                        <OutputClaim ClaimTypeReferenceId="jexg_branch_var_1" DefaultValue="false" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueC" DefaultValue="" />
+                    </OutputClaims>
+                    <OutputClaimsTransformations>
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_17" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_18" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_19" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_gacc_3" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_gacc_4" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_22" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_23" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_24" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_gacc_8" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_gacc_9" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_27" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_28" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_cnd_29" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_gacc_13" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_gacc_14" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_facc_15" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_facc_16" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_17" />
+                        <OutputClaimsTransformation ReferenceId="jexg_cond_cxf_18" />
+                    </OutputClaimsTransformations>
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Local Account SignIn</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_upv_tp_1">
+                    <DisplayName>Local Account Sign-In 1</DisplayName>
+                    <Protocol Name="OpenIdConnect" />
+                    <Metadata>
+                        <Item Key="ProviderName">https://sts.windows.net/</Item>
+                        <Item Key="METADATA">https://login.microsoftonline.com/{tenant}/.well-known/openid-configuration</Item>
+                        <Item Key="authorization_endpoint">https://login.microsoftonline.com/{tenant}/oauth2/token</Item>
+                        <Item Key="response_types">id_token</Item>
+                        <Item Key="response_mode">query</Item>
+                        <Item Key="scope">email openid</Item>
+                        <Item Key="UsePolicyInRedirectUri">false</Item>
+                        <Item Key="HttpBinding">POST</Item>
+                    </Metadata>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="userEmail" DefaultValue="" PartnerClaimType="username" Required="true" />
+                        <InputClaim ClaimTypeReferenceId="password" DefaultValue="" Required="true" />
+                        <InputClaim ClaimTypeReferenceId="grant_type" DefaultValue="Password" AlwaysUseDefaultValue="true" PartnerClaimType="grant_type" />
+                        <InputClaim ClaimTypeReferenceId="scope" DefaultValue="openid" AlwaysUseDefaultValue="true" PartnerClaimType="scope" />
+                        <InputClaim ClaimTypeReferenceId="nca" DefaultValue="1" AlwaysUseDefaultValue="true" PartnerClaimType="nca" />
+                        <InputClaim ClaimTypeReferenceId="client_id" DefaultValue="4fd657d2-9232-45c7-9246-736ed750c162" AlwaysUseDefaultValue="true" PartnerClaimType="client_id" />
+                        <InputClaim ClaimTypeReferenceId="resource_id" DefaultValue="f9b3b389-0b7a-4690-aa21-128bfd2b30af" AlwaysUseDefaultValue="true" PartnerClaimType="resource" />
+                    </InputClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="objectId" DefaultValue="" PartnerClaimType="oid" />
+                    </OutputClaims>
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Local Account</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_signin_local_tp">
+                    <DisplayName>Local Account Signin</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="setting.forgotPasswordLinkLocation">None</Item>
+                        <Item Key="setting.showSignupLink">false</Item>
+                        <Item Key="ContentDefinitionReferenceId">api.localaccountsignin</Item>
+                        <Item Key="IncludeClaimResolvingInClaimsHandling">true</Item>
+                        <Item Key="setting.operatingMode">Email</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="userEmail" DefaultValue="{OIDC:LoginHint}" AlwaysUseDefaultValue="true" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="userEmail" Required="true" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="objectId" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="userEmail" DefaultValue="" />
+                    </OutputClaims>
+                    <ValidationTechnicalProfiles>
+                        <ValidationTechnicalProfile ReferenceId="jexg_upv_tp_1" />
+                    </ValidationTechnicalProfiles>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-AAD" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Self Asserted</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_ui_tp_3">
+                    <DisplayName>User Input 3</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="Enter Test Values" AlwaysUseDefaultValue="true" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="testValueA" />
+                        <DisplayClaim ClaimTypeReferenceId="testValueB" />
+                        <DisplayClaim ClaimTypeReferenceId="testValueC" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueC" DefaultValue="" />
+                    </OutputClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_5">
+                    <DisplayName>User Input 5</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaimsTransformations>
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueA_jexg_ui_di" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueB_jexg_ui_di" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueC_jexg_ui_di" />
+                    </InputClaimsTransformations>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="Exactly Two ==" AlwaysUseDefaultValue="true" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueC" DefaultValue="" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueC" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueC" DefaultValue="" />
+                    </OutputClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_6">
+                    <DisplayName>User Input 6</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaimsTransformations>
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueA_jexg_ui_di_0" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueB_jexg_ui_di_0" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueC_jexg_ui_di_0" />
+                    </InputClaimsTransformations>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="All ==, or more than one !=" AlwaysUseDefaultValue="true" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_0" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_0" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueC_0" DefaultValue="" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_0" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_0" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueC_0" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueC" DefaultValue="" />
+                    </OutputClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_7">
+                    <DisplayName>User Input 7</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="All done!" AlwaysUseDefaultValue="true" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                    </OutputClaims>
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Token Issuers</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jwtIssuer">
+                    <DisplayName>JWT Issuer</DisplayName>
+                    <Protocol Name="OpenIdConnect" />
+                    <OutputTokenFormat>JWT</OutputTokenFormat>
+                    <Metadata>
+                        <Item Key="client_id">{service:te}</Item>
+                        <Item Key="issuer_refresh_token_user_identity_claim_type">objectId</Item>
+                        <Item Key="SendTokenResponseBodyWithJsonNumbers">true</Item>
+                    </Metadata>
+                    <CryptographicKeys>
+                        <Key Id="issuer_secret" StorageReferenceId="B2C_1A_TokenSigningKeyContainer" />
+                        <Key Id="issuer_refresh_token_key" StorageReferenceId="B2C_1A_TokenEncryptionKeyContainer" />
+                    </CryptographicKeys>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-jwt-issuer" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+    </ClaimsProviders>
+    <UserJourneys>
+        <UserJourney Id="userjourney-096c7148-3541-e289-fbe5-989a9ee303cf">
+            <OrchestrationSteps>
+                <OrchestrationStep Order="1" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_brv_init_cex" TechnicalProfileReferenceId="jexg_brv_init_tp" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="2" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.signuporsignin">
+                    <ClaimsProviderSelections>
+                        <ClaimsProviderSelection ValidationClaimsExchangeId="jexg_signin_local_cex" />
+                    </ClaimsProviderSelections>
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_signin_local_cex" TechnicalProfileReferenceId="jexg_signin_local_tp" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="3" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_2" TechnicalProfileReferenceId="jexg_ui_tp_3" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="4" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_cond_cex_3" TechnicalProfileReferenceId="jexg_cond_tp_4" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="5" Type="ClaimsExchange">
+                    <Preconditions>
+                        <Precondition Type="ClaimEquals" ExecuteActionsIf="false">
+                            <Value>jexg_branch_var_0</Value>
+                            <Value>true</Value>
+                            <Action>SkipThisOrchestrationStep</Action>
+                        </Precondition>
+                    </Preconditions>
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_4" TechnicalProfileReferenceId="jexg_ui_tp_5" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="6" Type="ClaimsExchange">
+                    <Preconditions>
+                        <Precondition Type="ClaimEquals" ExecuteActionsIf="false">
+                            <Value>jexg_branch_var_1</Value>
+                            <Value>true</Value>
+                            <Action>SkipThisOrchestrationStep</Action>
+                        </Precondition>
+                    </Preconditions>
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_5" TechnicalProfileReferenceId="jexg_ui_tp_6" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="7" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_6" TechnicalProfileReferenceId="jexg_ui_tp_7" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="8" Type="SendClaims" CpimIssuerTechnicalProfileReferenceId="jwtIssuer" />
+            </OrchestrationSteps>
+            <ClientDefinition ReferenceId="DefaultWeb" />
+        </UserJourney>
+    </UserJourneys>
+</TrustFrameworkPolicy>

@@ -1,0 +1,26 @@
+<TrustFrameworkPolicy xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PolicySchemaVersion="0.3.0.0" TenantId="gptestb2corg.onmicrosoft.com" PolicyId="B2C_1A_TestSession7" PublicPolicyUri="http://gptestb2corg.onmicrosoft.com/B2C_1A_TestSession7">
+    <BasePolicy>
+        <TenantId>gptestb2corg.onmicrosoft.com</TenantId>
+        <PolicyId>B2C_1A_TrustFrameworkExtensions7</PolicyId>
+    </BasePolicy>
+    <RelyingParty>
+        <DefaultUserJourney ReferenceId="userjourney-13e25e46-e6b5-82ac-b0aa-96a6cbc098f6" />
+        <UserJourneyBehaviors>
+            <SingleSignOn Scope="Tenant" />
+            <SessionExpiryType>Absolute</SessionExpiryType>
+            <SessionExpiryInSeconds>900</SessionExpiryInSeconds>
+        </UserJourneyBehaviors>
+        <TechnicalProfile Id="PolicyProfile">
+            <DisplayName>Policy Profile</DisplayName>
+            <Protocol Name="OpenIdConnect" />
+            <OutputClaims>
+                <OutputClaim ClaimTypeReferenceId="objectId" PartnerClaimType="sub" />
+                <OutputClaim ClaimTypeReferenceId="givenName" DefaultValue="gDefaultEnd" AlwaysUseDefaultValue="false" />
+                <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="aDefaultEnd" AlwaysUseDefaultValue="false" />
+                <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="bDefaultEnd" AlwaysUseDefaultValue="false" />
+                <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="display" AlwaysUseDefaultValue="true" />
+            </OutputClaims>
+            <SubjectNamingInfo ClaimType="sub" />
+        </TechnicalProfile>
+    </RelyingParty>
+</TrustFrameworkPolicy>

@@ -1,0 +1,62 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+.intro h2 {
+  text-align: center;
+}
+.entry {
+  width: 400px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+.divider h2 {
+  text-align: center;
+}
+.create {
+  width: 400px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+img {
+  width: 100px;
+  height: 50px;
+  visibility: visible; 
+  opacity: 0.8; 
+  transition: 
+  opacity 0.6s 
+  ease-in-out 0.05s;
+}
+
+input, select, option {
+  display: block;
+  width: 80%;
+  height: 25px;
+  padding: 5px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
+input:disabled {
+  background-color: rgb(245, 245, 245);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+button {
+  background-color: rgb(255, 76, 80);
+  color: white;
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+}

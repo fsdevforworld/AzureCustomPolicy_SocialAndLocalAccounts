@@ -1,0 +1,20 @@
+<TrustFrameworkPolicy xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PolicySchemaVersion="0.3.0.0" TenantId="gptestb2corg.onmicrosoft.com" PolicyId="B2C_1A_MultiConditionTest" PublicPolicyUri="http://gptestb2corg.onmicrosoft.com/B2C_1A_MultiConditionTest">
+    <BasePolicy>
+        <TenantId>gptestb2corg.onmicrosoft.com</TenantId>
+        <PolicyId>B2C_1A_TrustFrameworkExtensions</PolicyId>
+    </BasePolicy>
+    <RelyingParty>
+        <DefaultUserJourney ReferenceId="userjourney-096c7148-3541-e289-fbe5-989a9ee303cf" />
+        <TechnicalProfile Id="PolicyProfile">
+            <DisplayName>Policy Profile</DisplayName>
+            <Protocol Name="OpenIdConnect" />
+            <OutputClaims>
+                <OutputClaim ClaimTypeReferenceId="objectId" PartnerClaimType="sub"/>
+                <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="defaultA" AlwaysUseDefaultValue="true" />
+                <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="defaultB" AlwaysUseDefaultValue="true" />
+                <OutputClaim ClaimTypeReferenceId="testValueC" DefaultValue="defaultC" AlwaysUseDefaultValue="true" />
+            </OutputClaims>
+            <SubjectNamingInfo ClaimType="sub" />
+        </TechnicalProfile>
+    </RelyingParty>
+</TrustFrameworkPolicy>

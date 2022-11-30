@@ -1,0 +1,1085 @@
+<TrustFrameworkPolicy xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PolicySchemaVersion="0.3.0.0" TenantId="gptestb2corg.onmicrosoft.com" PolicyId="B2C_1A_TrustFrameworkExtensionsEE" PublicPolicyUri="http://gptestb2corg.onmicrosoft.com/B2C_1A_TrustFrameworkExtensionsEE">
+    <BuildingBlocks>
+        <ClaimsSchema>
+            <ClaimType Id="socialIdpUserId">
+                <DisplayName>Username</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="objectId">
+                <DisplayName>User's Object ID</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="password">
+                <DisplayName>Password</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Password</UserInputType>
+            </ClaimType>
+            <ClaimType Id="tenantId">
+                <DisplayName>User's Object's Tenant ID</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="signInName">
+                <DisplayName>Sign in name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="signInNames.emailAddress">
+                <DisplayName>Email Address</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="accountEnabled">
+                <DisplayName>Account Enabled</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="newPassword">
+                <DisplayName>New Password</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Password</UserInputType>
+            </ClaimType>
+            <ClaimType Id="reenterPassword">
+                <DisplayName>Confirm New Password</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Password</UserInputType>
+            </ClaimType>
+            <ClaimType Id="passwordPolicies">
+                <DisplayName>Password Policies</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="client_id">
+                <DisplayName>client_id</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="resource_id">
+                <DisplayName>resource_id</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="sub">
+                <DisplayName>Subject</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="identityProvider">
+                <DisplayName>Identity Provider</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="displayName">
+                <DisplayName>Display Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="email">
+                <DisplayName>Email Address</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="otherMails">
+                <DisplayName>Alternate Email Addresses</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="userPrincipalName">
+                <DisplayName>UserPrincipalName</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="upnUserName">
+                <DisplayName>UPN User Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="newUser">
+                <DisplayName>User is new</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="executedSelfAssertedInput">
+                <DisplayName>executed-SelfAsserted-Input</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="authenticationSource">
+                <DisplayName>AuthenticationSource</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="nca">
+                <DisplayName>nca</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="grant_type">
+                <DisplayName>grant_type</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="scope">
+                <DisplayName>scope</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="objectIdFromSession">
+                <DisplayName>objectIdFromSession</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="isActiveMFASession">
+                <DisplayName>isActiveMFASession</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="givenName">
+                <DisplayName>Given Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="surname">
+                <DisplayName>Surname</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="displayText">
+                <DisplayName>Message</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="testValueA">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="testValueB">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>TextBox</UserInputType>
+            </ClaimType>
+            <ClaimType Id="testFlag">
+                <DisplayName>Test Flag</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="testFlag2">
+                <DisplayName>Test Flag 2</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_bcopy_dummy">
+                <DisplayName>jexg_bcopy_dummy</DisplayName>
+                <DataType>boolean</DataType>
+            </ClaimType>
+            <ClaimType Id="grant_type_0">
+                <DisplayName>grant_type</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="scope_0">
+                <DisplayName>scope</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="nca_0">
+                <DisplayName>nca</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="client_id_0">
+                <DisplayName>client_id</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="resource_id_0">
+                <DisplayName>resource_id</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_sm_sflag_40">
+                <DisplayName>jexg_sm_sflag_40</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="executed-selfAsserted-Input">
+                <DisplayName>executed-selfAsserted-Input</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_sm_sflag_42">
+                <DisplayName>jexg_sm_sflag_42</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_givenName">
+                <DisplayName>Given Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueA">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueB">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_sm_sflag_46">
+                <DisplayName>jexg_sm_sflag_46</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_givenName_0">
+                <DisplayName>Given Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueA_0">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueB_0">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_givenName_1">
+                <DisplayName>Given Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueA_1">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueB_1">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_sm_sflag_53">
+                <DisplayName>jexg_sm_sflag_53</DisplayName>
+                <DataType>string</DataType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_displayNam">
+                <DisplayName>Display Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_givenName_2">
+                <DisplayName>Given Name</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueA_2">
+                <DisplayName>Test Value A</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+            <ClaimType Id="jexg_ui_dispcopy_testValueB_2">
+                <DisplayName>Test Value B</DisplayName>
+                <DataType>string</DataType>
+                <UserInputType>Readonly</UserInputType>
+            </ClaimType>
+        </ClaimsSchema>
+        <ClaimsTransformations>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_givenName_jexg_ui_di" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="givenName" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueA_jexg_ui_di" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueB_jexg_ui_di" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_givenName_jexg_ui_di_0" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="givenName" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_0" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueA_jexg_ui_di_0" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_0" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueB_jexg_ui_di_0" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_0" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_givenName_jexg_ui_di_1" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="givenName" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_1" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueA_jexg_ui_di_1" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_1" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueB_jexg_ui_di_1" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_1" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_givenName_jexg_ui_di_2" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="givenName" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_2" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueA_jexg_ui_di_2" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueA" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_2" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+            <ClaimsTransformation Id="jexg_ui_pfcopy_testValueB_jexg_ui_di_2" TransformationMethod="CopyClaim">
+                <InputClaims>
+                    <InputClaim ClaimTypeReferenceId="testValueB" TransformationClaimType="inputClaim" />
+                </InputClaims>
+                <OutputClaims>
+                    <OutputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_2" TransformationClaimType="outputClaim" />
+                </OutputClaims>
+            </ClaimsTransformation>
+        </ClaimsTransformations>
+        <ClientDefinitions>
+            <ClientDefinition Id="DefaultWeb">
+                <ClientUIFilterFlags>LineMarkers, MetaRefresh</ClientUIFilterFlags>
+            </ClientDefinition>
+        </ClientDefinitions>
+        <ContentDefinitions>
+            <ContentDefinition Id="api.error">
+                <LoadUri>~/tenant/templates/AzureBlue/exception.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:globalexception:1.2.1</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Error page</Item>
+                </Metadata>
+            </ContentDefinition>
+            <ContentDefinition Id="api.idpselections">
+                <LoadUri>~/tenant/templates/AzureBlue/idpSelector.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:providerselection:1.2.1</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Idp selection page</Item>
+                    <Item Key="language.intro">Sign in</Item>
+                </Metadata>
+                <LocalizedResourcesReferences MergeBehavior="Prepend">
+                    <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.idpselections.en" />
+                </LocalizedResourcesReferences>
+            </ContentDefinition>
+            <ContentDefinition Id="api.idpselections.signup">
+                <LoadUri>~/tenant/templates/AzureBlue/idpSelector.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:providerselection:1.2.1</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Idp selection page</Item>
+                    <Item Key="language.intro">Sign up</Item>
+                </Metadata>
+            </ContentDefinition>
+            <ContentDefinition Id="api.signuporsignin">
+                <LoadUri>~/tenant/templates/AzureBlue/unified.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:unifiedssp:2.1.5</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Signin and Signup</Item>
+                </Metadata>
+                <LocalizedResourcesReferences MergeBehavior="Prepend">
+                    <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.signuporsignin.en" />
+                </LocalizedResourcesReferences>
+            </ContentDefinition>
+            <ContentDefinition Id="api.selfasserted">
+                <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.7</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Collect information from user page</Item>
+                </Metadata>
+            </ContentDefinition>
+            <ContentDefinition Id="api.selfasserted.profileupdate">
+                <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.7</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Collect information from user page</Item>
+                </Metadata>
+                <LocalizedResourcesReferences MergeBehavior="Prepend">
+                    <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.selfasserted.profileupdate.en" />
+                </LocalizedResourcesReferences>
+            </ContentDefinition>
+            <ContentDefinition Id="api.localaccountsignup">
+                <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.7</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Local account sign up page</Item>
+                </Metadata>
+                <LocalizedResourcesReferences MergeBehavior="Prepend">
+                    <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.localaccountsignup.en" />
+                </LocalizedResourcesReferences>
+            </ContentDefinition>
+            <ContentDefinition Id="api.localaccountpasswordreset">
+                <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.7</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Local account change password page</Item>
+                </Metadata>
+                <LocalizedResourcesReferences MergeBehavior="Prepend">
+                    <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.localaccountpasswordreset.en" />
+                </LocalizedResourcesReferences>
+            </ContentDefinition>
+            <ContentDefinition Id="api.socialccountsignup">
+                <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.7</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Collect information from user page</Item>
+                </Metadata>
+                <LocalizedResourcesReferences MergeBehavior="Prepend">
+                    <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.socialccountsignup.en" />
+                </LocalizedResourcesReferences>
+            </ContentDefinition>
+            <ContentDefinition Id="api.localaccountsignin">
+                <LoadUri>~/tenant/templates/AzureBlue/selfAsserted.cshtml</LoadUri>
+                <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
+                <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.1.7</DataUri>
+                <Metadata>
+                    <Item Key="DisplayName">Collect information from user page</Item>
+                </Metadata>
+                <LocalizedResourcesReferences MergeBehavior="Prepend">
+                    <LocalizedResourcesReference Language="en" LocalizedResourcesReferenceId="api.localaccountsignin.en" />
+                </LocalizedResourcesReferences>
+            </ContentDefinition>
+        </ContentDefinitions>
+        <Localization Enabled="true">
+            <SupportedLanguages DefaultLanguage="en" MergeBehavior="Append">
+                <SupportedLanguage>en</SupportedLanguage>
+            </SupportedLanguages>
+            <LocalizedResources Id="api.signuporsignin.en">
+                <LocalizedStrings>
+                    <LocalizedString ElementType="ClaimType" ElementId="signInName" StringId="DisplayName">Email Address</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="heading">Sign in</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="social_intro">Sign in with your social account</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="local_intro_generic">Sign in with your {0}</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="password" StringId="DisplayName">Password</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="requiredField_password">Please enter your password</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="requiredField_generic">Please enter your {0}</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="invalid_generic">Please enter a valid {0}</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="createaccount_one_link">Sign up now</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="createaccount_two_links">Sign up with {0} or {1}</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="createaccount_three_links">Sign up with {0}, {1}, or {2}</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="forgotpassword_link">Forgot your password?</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_signin">Sign in</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="divider_title">OR</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="createaccount_intro">Don't have an account?</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="unknown_error">We are having trouble signing you in. Please try again later.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="remember_me">Keep me signed in</LocalizedString>
+                    <LocalizedString ElementType="ClaimsProvider" StringId="FacebookExchange">Facebook</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="ResourceOwnerFlowInvalidCredentials">Your password is incorrect.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfInvalidPassword">Your password is incorrect.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfPasswordExpired">Your password has expired.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalDoesNotExist">We can't seem to find your account.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfOldPasswordUsed">Looks like you used an old password.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="DefaultMessage">Invalid username or password.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfUserAccountDisabled">Your account has been locked. Contact your support person to unlock it, then try again.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfUserAccountLocked">Your account is temporarily locked to prevent unauthorized use. Try again later.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="AADRequestsThrottled">There are too many requests at this moment. Please wait for some time and try again.</LocalizedString>
+                </LocalizedStrings>
+            </LocalizedResources>
+            <LocalizedResources Id="api.localaccountsignup.en">
+                <LocalizedStrings>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="DisplayName">Email Address</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="UserHelpText">Email address that can be used to contact you.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="PatternHelpText">Please enter a valid email address.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="DisplayName">New Password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="UserHelpText">Enter new password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="PatternHelpText">8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ &amp; * - _ + = [ ] { } |  : ' , ? / ` ~ " ( ) ; .</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="DisplayName">Confirm New Password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="UserHelpText">Confirm new password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="PatternHelpText">8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ &amp; * - _ + = [ ] { } |  : ' , ? / ` ~ " ( ) ; .</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="DisplayName">Display Name</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="UserHelpText">Your display name.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="surname" StringId="DisplayName">Surname</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="surname" StringId="UserHelpText">Your surname (also known as family name or last name).</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="givenName" StringId="DisplayName">Given Name</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="givenName" StringId="UserHelpText">Your given name (also known as first name).</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_continue">Create</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="error_fieldIncorrect">One or more fields are filled out incorrectly. Please check your entries and try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="error_passwordEntryMismatch">The password entry fields do not match. Please enter the same password in both fields and try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="error_requiredFieldMissing">A required field is missing. Please fill out all required fields and try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="helplink_text">What is this?</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="initial_intro">Please provide the following details.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="preloader_alt">Please wait</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="required_field">This information is required.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_cancel">Cancel</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_edit">Change e-mail</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_resend">Send new code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_send">Send verification code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_verify">Verify code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_code_expired">That code is expired. Please request a new code.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_no_retry">You've made too many incorrect attempts. Please try again later.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_retry">That code is incorrect. Please try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_server">We are having trouble verifying your email address. Please enter a valid email address and try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_throttled">There have been too many requests to verify this email address. Please wait a while, then try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_info_msg">Verification code has been sent to your inbox. Please copy it to the input box below.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_input">Verification code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_intro_msg">Verification is necessary. Please click Send button.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_success_msg">E-mail address verified. You can now continue.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="ServiceThrottled">There are too many requests at this moment. Please wait for some time and try again.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimNotVerified">Claim not verified: {0}</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalAlreadyExists">A user with the specified ID already exists. Please choose a different one.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfIncorrectPattern">Incorrect pattern for: {0}</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfInvalidInput">{0} has invalid input.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfMissingRequiredElement">Missing required element: {0}</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfValidationError">Error in validation by: {0}</LocalizedString>
+                </LocalizedStrings>
+            </LocalizedResources>
+            <LocalizedResources Id="api.socialccountsignup.en">
+                <LocalizedStrings>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="DisplayName">Email Address</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="UserHelpText">Email address that can be used to contact you.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="PatternHelpText">Please enter a valid email address.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="DisplayName">Display Name</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="UserHelpText">Your display name.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="surname" StringId="DisplayName">Surname</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="surname" StringId="UserHelpText">Your surname (also known as family name or last name).</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="givenName" StringId="DisplayName">Given Name</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="givenName" StringId="UserHelpText">Your given name (also known as first name).</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_continue">Create</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_cancel">Cancel</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalAlreadyExists">You are already registered, please press the back button and sign in instead.</LocalizedString>
+                </LocalizedStrings>
+            </LocalizedResources>
+            <LocalizedResources Id="api.localaccountpasswordreset.en">
+                <LocalizedStrings>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="DisplayName">Email Address</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="UserHelpText">Email address that can be used to contact you.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="email" StringId="PatternHelpText">Please enter a valid email address.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="DisplayName">New Password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="UserHelpText">Enter new password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="newPassword" StringId="PatternHelpText">8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ &amp; * - _ + = [ ] { } |  : ' , ? / ` ~ " ( ) ; .</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="DisplayName">Confirm New Password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="UserHelpText">Confirm new password</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="reenterPassword" StringId="PatternHelpText">8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ &amp; * - _ + = [ ] { } |  : ' , ? / ` ~ " ( ) ; .</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="error_passwordEntryMismatch">The password entry fields do not match. Please enter the same password in both fields and try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="error_fieldIncorrect">One or more fields are filled out incorrectly. Please check your entries and try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_continue">Continue</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_cancel">Cancel</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalDoesNotExist">An account could not be found for the provided user ID.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsTransformationBooleanValueIsNotEqual">Your account has been locked. Contact your support person to unlock it, then try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="required_field">This information is required.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_edit">Change e-mail</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_resend">Send new code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_send">Send verification code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_but_verify">Verify code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_code_expired">That code is expired. Please request a new code.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_no_retry">You've made too many incorrect attempts. Please try again later.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_retry">That code is incorrect. Please try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_server">We are having trouble verifying your email address. Please enter a valid email address and try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_fail_throttled">There have been too many requests to verify this email address. Please wait a while, then try again.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_info_msg">Verification code has been sent to your inbox. Please copy it to the input box below.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_input">Verification code</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_intro_msg">Verification is necessary. Please click Send button.</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="ver_success_msg">E-mail address verified. You can now continue.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="ServiceThrottled">There are too many requests at this moment. Please wait for some time and try again.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimNotVerified">Claim not verified: {0}</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalAlreadyExists">A user with the specified ID already exists. Please choose a different one.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfIncorrectPattern">Incorrect pattern for: {0}</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfInvalidInput">{0} has invalid input.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfMissingRequiredElement">Missing required element: {0}</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfValidationError">Error in validation by: {0}</LocalizedString>
+                </LocalizedStrings>
+            </LocalizedResources>
+            <LocalizedResources Id="api.idpselections.en">
+                <LocalizedStrings>
+                    <LocalizedString ElementType="UxElement" StringId="intro">Sign in</LocalizedString>
+                    <LocalizedString ElementType="ClaimsProvider" StringId="LocalAccountSigninEmailExchange">Local Account Signin</LocalizedString>
+                    <LocalizedString ElementType="ClaimsProvider" StringId="FacebookExchange">Facebook</LocalizedString>
+                </LocalizedStrings>
+            </LocalizedResources>
+            <LocalizedResources Id="api.localaccountsignin.en">
+                <LocalizedStrings>
+                    <LocalizedString ElementType="ClaimType" ElementId="signInName" StringId="DisplayName">Email Address</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="password" StringId="DisplayName">Password</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_continue">Continue</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_cancel">Cancel</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="ResourceOwnerFlowInvalidCredentials">Your password is incorrect.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfInvalidPassword">Your password is incorrect.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfPasswordExpired">Your password has expired.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalDoesNotExist">We can't seem to find your account.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfOldPasswordUsed">Looks like you used an old password.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="DefaultMessage">Invalid username or password.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfUserAccountDisabled">Your account has been locked. Contact your support person to unlock it, then try again.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfUserAccountLocked">Your account is temporarily locked to prevent unauthorized use. Try again later.</LocalizedString>
+                    <LocalizedString ElementType="ErrorMessage" StringId="AADRequestsThrottled">There are too many requests at this moment. Please wait for some time and try again.</LocalizedString>
+                </LocalizedStrings>
+            </LocalizedResources>
+            <LocalizedResources Id="api.selfasserted.profileupdate.en">
+                <LocalizedStrings>
+                    <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="DisplayName">Display Name</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="displayName" StringId="UserHelpText">Your display name.</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="surname" StringId="DisplayName">Surname</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="surname" StringId="UserHelpText">Your surname (also known as family name or last name).</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="givenName" StringId="DisplayName">Given Name</LocalizedString>
+                    <LocalizedString ElementType="ClaimType" ElementId="givenName" StringId="UserHelpText">Your given name (also known as first name).</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_continue">Continue</LocalizedString>
+                    <LocalizedString ElementType="UxElement" StringId="button_cancel">Cancel</LocalizedString>
+                </LocalizedStrings>
+            </LocalizedResources>
+        </Localization>
+    </BuildingBlocks>
+    <ClaimsProviders>
+        <ClaimsProvider>
+            <DisplayName>Trustframework Policy Engine TechnicalProfiles</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="TpEngine_c3bd4fe2-1775-4013-b91d-35f16d377d13">
+                    <DisplayName>Trustframework Policy Engine Default Technical Profile</DisplayName>
+                    <Protocol Name="None" />
+                    <Metadata>
+                        <Item Key="url">{service:te}</Item>
+                    </Metadata>
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Session Management</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="SM-Noop">
+                    <DisplayName>Noop Session Management Provider</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.SSO.NoopSSOSessionProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                </TechnicalProfile>
+                <TechnicalProfile Id="SM-Default">
+                    <DisplayName>Default Session Management Provider</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.SSO.DefaultSSOSessionProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <PersistedClaims>
+                        <PersistedClaim ClaimTypeReferenceId="objectId" DefaultValue="" AlwaysUseDefaultValue="false" />
+                        <PersistedClaim ClaimTypeReferenceId="email" DefaultValue="" AlwaysUseDefaultValue="false" />
+                        <PersistedClaim ClaimTypeReferenceId="testValueA" DefaultValue="testADefault" AlwaysUseDefaultValue="false" />
+                    </PersistedClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_sm_ext_tp_aadRead-205e">
+                    <DisplayName>Individual Session Management Profile aadRead-205e</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.SSO.DefaultSSOSessionProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <PersistedClaims>
+                        <PersistedClaim ClaimTypeReferenceId="givenName" DefaultValue="gNameDefault" AlwaysUseDefaultValue="false" />
+                        <PersistedClaim ClaimTypeReferenceId="jexg_sm_sflag_40" DefaultValue="" />
+                    </PersistedClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_sm_ext_tp_userInputPag">
+                    <DisplayName>Individual Session Management Profile userInputPag</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.SSO.DefaultSSOSessionProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <PersistedClaims>
+                        <PersistedClaim ClaimTypeReferenceId="testValueB" DefaultValue="testBDefault" AlwaysUseDefaultValue="false" />
+                        <PersistedClaim ClaimTypeReferenceId="jexg_sm_sflag_42" DefaultValue="" />
+                    </PersistedClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_sm_ext_tp_userInputPag_0">
+                    <DisplayName>Individual Session Management Profile userInputPag</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.SSO.DefaultSSOSessionProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <PersistedClaims>
+                        <PersistedClaim ClaimTypeReferenceId="testFlag2" DefaultValue="bb" AlwaysUseDefaultValue="false" />
+                        <PersistedClaim ClaimTypeReferenceId="jexg_sm_sflag_46" DefaultValue="" />
+                    </PersistedClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_sm_ext_tp_userInputPag_1">
+                    <DisplayName>Individual Session Management Profile userInputPag</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.SSO.DefaultSSOSessionProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <PersistedClaims>
+                        <PersistedClaim ClaimTypeReferenceId="testFlag" DefaultValue="aa" AlwaysUseDefaultValue="true" />
+                        <PersistedClaim ClaimTypeReferenceId="jexg_sm_sflag_53" DefaultValue="" />
+                    </PersistedClaims>
+                </TechnicalProfile>
+                <TechnicalProfile Id="SM-jwt-issuer">
+                    <DisplayName>OAuth Session Management Provider</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.SSO.OAuthSSOSessionProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Conditional Handling</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_brv_init_tp">
+                    <DisplayName>Branch Variable Initialization</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.ClaimsTransformationProtocolProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="jexg_bcopy_dummy" DefaultValue="true" AlwaysUseDefaultValue="true" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-Noop" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Local Account SignIn</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_upv_tp_3">
+                    <DisplayName>Local Account Sign-In 3</DisplayName>
+                    <Protocol Name="OpenIdConnect" />
+                    <Metadata>
+                        <Item Key="ProviderName">https://sts.windows.net/</Item>
+                        <Item Key="METADATA">https://login.microsoftonline.com/{tenant}/.well-known/openid-configuration</Item>
+                        <Item Key="authorization_endpoint">https://login.microsoftonline.com/{tenant}/oauth2/token</Item>
+                        <Item Key="response_types">id_token</Item>
+                        <Item Key="response_mode">query</Item>
+                        <Item Key="scope">email openid</Item>
+                        <Item Key="UsePolicyInRedirectUri">false</Item>
+                        <Item Key="HttpBinding">POST</Item>
+                        <Item Key="client_id">4fd657d2-9232-45c7-9246-736ed750c162</Item>
+                        <Item Key="IdTokenAudience">f9b3b389-0b7a-4690-aa21-128bfd2b30af</Item>
+                    </Metadata>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="email" DefaultValue="" PartnerClaimType="username" Required="true" />
+                        <InputClaim ClaimTypeReferenceId="password" DefaultValue="" Required="true" />
+                        <InputClaim ClaimTypeReferenceId="grant_type_0" DefaultValue="Password" AlwaysUseDefaultValue="true" PartnerClaimType="grant_type" />
+                        <InputClaim ClaimTypeReferenceId="scope_0" DefaultValue="openid" AlwaysUseDefaultValue="true" PartnerClaimType="scope" />
+                        <InputClaim ClaimTypeReferenceId="nca_0" DefaultValue="1" AlwaysUseDefaultValue="true" PartnerClaimType="nca" />
+                        <InputClaim ClaimTypeReferenceId="client_id_0" DefaultValue="4fd657d2-9232-45c7-9246-736ed750c162" AlwaysUseDefaultValue="true" PartnerClaimType="client_id" />
+                        <InputClaim ClaimTypeReferenceId="resource_id_0" DefaultValue="f9b3b389-0b7a-4690-aa21-128bfd2b30af" AlwaysUseDefaultValue="true" PartnerClaimType="resource" />
+                    </InputClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="objectId" DefaultValue="" PartnerClaimType="oid" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-Default" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Local Account</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_signin_local_tp">
+                    <DisplayName>Local Account Signin</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="setting.forgotPasswordLinkLocation">None</Item>
+                        <Item Key="setting.showSignupLink">false</Item>
+                        <Item Key="ContentDefinitionReferenceId">api.localaccountsignin</Item>
+                        <Item Key="IncludeClaimResolvingInClaimsHandling">true</Item>
+                        <Item Key="setting.operatingMode">Email</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="email" DefaultValue="{OIDC:LoginHint}" AlwaysUseDefaultValue="true" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="email" Required="true" />
+                        <DisplayClaim ClaimTypeReferenceId="password" Required="true" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="objectId" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="email" DefaultValue="" />
+                    </OutputClaims>
+                    <ValidationTechnicalProfiles>
+                        <ValidationTechnicalProfile ReferenceId="jexg_upv_tp_3" />
+                    </ValidationTechnicalProfiles>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-Default" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Azure Active Directory</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_aad_read_tp_aadRead-205e">
+                    <DisplayName>AAD Read aadRead-205e</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.AzureActiveDirectoryProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="Operation">Read</Item>
+                        <Item Key="RaiseErrorIfClaimsPrincipalDoesNotExist">true</Item>
+                        <Item Key="ClientId">ebf59914-5041-45bc-a193-11437cc62dce</Item>
+                        <Item Key="ApplicationObjectId">3bbee931-81d7-4b4c-9c43-76cecb94821b</Item>
+                    </Metadata>
+                    <CryptographicKeys>
+                        <Key Id="issuer_secret" StorageReferenceId="B2C_1A_TokenSigningKeyContainer" />
+                    </CryptographicKeys>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="objectId" DefaultValue="" Required="true" />
+                    </InputClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="givenName" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="objectId" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="jexg_sm_sflag_40" DefaultValue="" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="jexg_sm_ext_tp_aadRead-205e" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Self Asserted</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jexg_ui_tp_8">
+                    <DisplayName>User Input 8</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="Enter Test A (only when no session)" AlwaysUseDefaultValue="true" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="testValueA" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-Default" />
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_9">
+                    <DisplayName>User Input 9</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="Enter Test B (Only if not executed)" AlwaysUseDefaultValue="true" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="testValueB" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="givenName" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="jexg_sm_sflag_42" DefaultValue="" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="jexg_sm_ext_tp_userInputPag" />
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_11">
+                    <DisplayName>User Input 11</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaimsTransformations>
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_givenName_jexg_ui_di" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueA_jexg_ui_di" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueB_jexg_ui_di" />
+                    </InputClaimsTransformations>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="Shows if no specific session" AlwaysUseDefaultValue="true" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB" DefaultValue="" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="givenName" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="jexg_sm_sflag_46" DefaultValue="" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="jexg_sm_ext_tp_userInputPag_0" />
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_13">
+                    <DisplayName>User Input 13</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaimsTransformations>
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_givenName_jexg_ui_di_0" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueA_jexg_ui_di_0" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueB_jexg_ui_di_0" />
+                    </InputClaimsTransformations>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="Shows if no session" AlwaysUseDefaultValue="true" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_0" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_0" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_0" DefaultValue="" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_0" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_0" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_0" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="givenName" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-Default" />
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_14">
+                    <DisplayName>User Input 14</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaimsTransformations>
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_givenName_jexg_ui_di_1" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueA_jexg_ui_di_1" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueB_jexg_ui_di_1" />
+                    </InputClaimsTransformations>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="displayText" DefaultValue="Show if has executed (2)" AlwaysUseDefaultValue="true" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_1" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_1" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_1" DefaultValue="" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="displayText" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_1" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_1" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_1" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayText" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="givenName" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="jexg_sm_sflag_53" DefaultValue="" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="jexg_sm_ext_tp_userInputPag_1" />
+                </TechnicalProfile>
+                <TechnicalProfile Id="jexg_ui_tp_16">
+                    <DisplayName>User Input 16</DisplayName>
+                    <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <Metadata>
+                        <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+                    </Metadata>
+                    <IncludeInSso>false</IncludeInSso>
+                    <InputClaimsTransformations>
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_givenName_jexg_ui_di_2" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueA_jexg_ui_di_2" />
+                        <InputClaimsTransformation ReferenceId="jexg_ui_pfcopy_testValueB_jexg_ui_di_2" />
+                    </InputClaimsTransformations>
+                    <InputClaims>
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_displayNam" DefaultValue="Show always" AlwaysUseDefaultValue="true" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_2" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_2" DefaultValue="" />
+                        <InputClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_2" DefaultValue="" />
+                    </InputClaims>
+                    <DisplayClaims>
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_displayNam" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_givenName_2" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueA_2" />
+                        <DisplayClaim ClaimTypeReferenceId="jexg_ui_dispcopy_testValueB_2" />
+                    </DisplayClaims>
+                    <OutputClaims>
+                        <OutputClaim ClaimTypeReferenceId="executed-selfAsserted-Input" DefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="displayName" DefaultValue="Show always" AlwaysUseDefaultValue="true" />
+                        <OutputClaim ClaimTypeReferenceId="givenName" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueA" DefaultValue="" />
+                        <OutputClaim ClaimTypeReferenceId="testValueB" DefaultValue="" />
+                    </OutputClaims>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-Noop" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+        <ClaimsProvider>
+            <DisplayName>Token Issuers</DisplayName>
+            <TechnicalProfiles>
+                <TechnicalProfile Id="jwtIssuer">
+                    <DisplayName>JWT Issuer</DisplayName>
+                    <Protocol Name="OpenIdConnect" />
+                    <OutputTokenFormat>JWT</OutputTokenFormat>
+                    <Metadata>
+                        <Item Key="client_id">{service:te}</Item>
+                        <Item Key="issuer_refresh_token_user_identity_claim_type">objectId</Item>
+                        <Item Key="SendTokenResponseBodyWithJsonNumbers">true</Item>
+                    </Metadata>
+                    <CryptographicKeys>
+                        <Key Id="issuer_secret" StorageReferenceId="B2C_1A_TokenSigningKeyContainer" />
+                        <Key Id="issuer_refresh_token_key" StorageReferenceId="B2C_1A_TokenEncryptionKeyContainer" />
+                    </CryptographicKeys>
+                    <UseTechnicalProfileForSessionManagement ReferenceId="SM-jwt-issuer" />
+                </TechnicalProfile>
+            </TechnicalProfiles>
+        </ClaimsProvider>
+    </ClaimsProviders>
+    <UserJourneys>
+        <UserJourney Id="userjourney-13e25e46-e6b5-82ac-b0aa-96a6cbc098f6">
+            <OrchestrationSteps>
+                <OrchestrationStep Order="1" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_brv_init_cex" TechnicalProfileReferenceId="jexg_brv_init_tp" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="2" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.signuporsignin">
+                    <ClaimsProviderSelections>
+                        <ClaimsProviderSelection ValidationClaimsExchangeId="jexg_signin_local_cex" />
+                    </ClaimsProviderSelections>
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_signin_local_cex" TechnicalProfileReferenceId="jexg_signin_local_tp" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="3" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_aad_read_cex_2" TechnicalProfileReferenceId="jexg_aad_read_tp_aadRead-205e" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="4" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_3" TechnicalProfileReferenceId="jexg_ui_tp_8" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="5" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_4" TechnicalProfileReferenceId="jexg_ui_tp_9" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="6" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_5" TechnicalProfileReferenceId="jexg_ui_tp_11" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="7" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_6" TechnicalProfileReferenceId="jexg_ui_tp_13" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="8" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_7" TechnicalProfileReferenceId="jexg_ui_tp_14" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="9" Type="ClaimsExchange">
+                    <ClaimsExchanges>
+                        <ClaimsExchange Id="jexg_ui_cex_8" TechnicalProfileReferenceId="jexg_ui_tp_16" />
+                    </ClaimsExchanges>
+                </OrchestrationStep>
+                <OrchestrationStep Order="10" Type="SendClaims" CpimIssuerTechnicalProfileReferenceId="jwtIssuer" />
+            </OrchestrationSteps>
+            <ClientDefinition ReferenceId="DefaultWeb" />
+        </UserJourney>
+    </UserJourneys>
+</TrustFrameworkPolicy>
